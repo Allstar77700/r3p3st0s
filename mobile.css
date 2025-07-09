@@ -1,0 +1,79 @@
+/* Estilos para dispositivos móviles (hasta 768px de ancho) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Apila los elementos de navegación */
+        gap: 10px; /* Espacio entre los enlaces */
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .navbar ul li a {
+        padding: 10px 20px;
+        display: block; /* Para que todo el área del li sea clicable */
+    }
+
+    main {
+        padding: 0 15px;
+    }
+
+    .section-content {
+        padding: 25px;
+    }
+
+    .section-content h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .slider-container {
+        flex-direction: column; /* Apila los items del slider */
+        align-items: center; /* Centra los items */
+    }
+
+    .slider-item {
+        width: 80%; /* Ajusta el ancho para móviles */
+        max-width: 300px; /* Limita el ancho máximo */
+        margin-bottom: 20px; /* Espacio entre items */
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* Una columna para móviles */
+    }
+
+    .product-item {
+        padding: 20px;
+    }
+
+    .product-item img {
+        height: 150px; /* Reduce la altura de la imagen en móviles */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: calc(100% - 24px); /* Ajuste para el padding interno */
+    }
+
+    .send-button {
+        width: 90%; /* Ajusta el ancho del botón */
+        max-width: 300px;
+        padding: 12px 20px;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+}

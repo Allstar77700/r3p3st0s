@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="alerta.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>AutoStar Repuestos - Mazda, Toyota, Chevrolet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="header-content">
+            <img src="https://via.placeholder.com/1200x400/87CEEB/FFFFFF?text=Tu+Logotipo+Aqui" alt="Banner AutoStar Repuestos" class="main-header-image">
+            <h1>AutoStar Repuestos</h1>
+            <p>Tu destino confiable para repuestos originales y de calidad.</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#quienes-somos">¿Quiénes Somos?</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto-form">Contacto</a></li>
+            <li><a href="#taller-automotriz">Nuestro Taller</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="marcas-slider" class="marcas-slider">
+            <h2>Nuestras Marcas</h2>
+            <div class="slider-container">
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/300x150/003366/FFFFFF?text=Logo+Mazda" alt="Logo Mazda">
+                    <h3>Mazda</h3>
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/300x150/D10007/FFFFFF?text=Logo+Toyota" alt="Logo Toyota">
+                    <h3>Toyota</h3>
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/300x150/003366/FFFFFF?text=Logo+Chevrolet" alt="Logo Chevrolet">
+                    <h3>Chevrolet</h3>
+                </div>
+                 <div class="slider-item">
+                    <img src="https://via.placeholder.com/300x150/003366/FFFFFF?text=Más+Marcas" alt="Más Marcas">
+                    <h3>Y más...</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="quienes-somos" class="section-content">
+            <h2>¿Quiénes Somos?</h2>
+            <p>En AutoStar Repuestos, somos más que una tienda; somos tu aliado confiable en el mantenimiento y reparación de tu vehículo. Con años de experiencia en el sector automotriz, nos especializamos en la venta de repuestos originales y de alta calidad para vehículos Mazda, Toyota y Chevrolet. Nuestro compromiso es brindarte productos duraderos y un servicio al cliente excepcional, asegurando que tu automóvil siempre funcione en óptimas condiciones. Creemos en la transparencia, la eficiencia y la calidad, valores que nos impulsan a ofrecerte solo lo mejor.</p>
+        </section>
+
+        <section id="productos" class="section-content">
+            <h2>Nuestros Productos</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/300x200/F0F8FF/003366?text=Freno+Mazda" alt="Freno Mazda">
+                    <h3>Pastillas de Freno Mazda</h3>
+                    <p>Alta durabilidad y rendimiento.</p>
+                    <button>Ver Detalles</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/300x200/F0F8FF/D10007?text=Filtro+Toyota" alt="Filtro Toyota">
+                    <h3>Filtros de Aire Toyota</h3>
+                    <p>Mejora la eficiencia del motor.</p>
+                    <button>Ver Detalles</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/300x200/F0F8FF/003366?text=Bujia+Chevrolet" alt="Bujia Chevrolet">
+                    <h3>Bujías Chevrolet</h3>
+                    <p>Encendido óptimo y menor consumo.</p>
+                    <button>Ver Detalles</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/300x200/F0F8FF/D10007?text=Aceite+Motor" alt="Aceite de Motor">
+                    <h3>Aceite de Motor Sintético</h3>
+                    <p>Protección superior para tu motor.</p>
+                    <button>Ver Detalles</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/300x200/F0F8FF/003366?text=Amortiguador" alt="Amortiguador">
+                    <h3>Amortiguadores Premium</h3>
+                    <p>Confort y estabilidad en cada viaje.</p>
+                    <button>Ver Detalles</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/300x200/F0F8FF/D10007?text=Bateria" alt="Bateria">
+                    <h3>Baterías de Larga Duración</h3>
+                    <p>Potencia y arranque confiable.</p>
+                    <button>Ver Detalles</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto-form" class="section-content contact-form-section">
+            <h2>Solicita tu Repuesto o Información</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="detalle">Detalle de tu Solicitud (Marca, modelo, repuesto, etc.):</label>
+                    <textarea id="detalle" name="detalle" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="send-button">Enviar Solicitud</button>
+                <p id="thankYouMessage" class="thank-you-message" style="display: none;">¡Gracias! Pronto responderemos a tu petición.</p>
+            </form>
+        </section>
+
+        <section id="info-contacto" class="section-content">
+            <h2>Información de Contacto</h2>
+            <p><strong>Correo:</strong> autostar.soacha@gmail.com</p>
+            <p><strong>Dirección:</strong> Cr. 3 #17a 49, Soacha, Cundinamarca</p>
+            <p><strong>Teléfono:</strong> 311 893 5307</p>
+            <p><strong>País:</strong> Colombia</p>
+        </section>
+
+        <section id="taller-automotriz" class="section-content">
+            <h2>AutoStar: Tu Taller Automotriz de Confianza</h2>
+            <p>En AutoStar, no solo vendemos repuestos; también somos un centro de servicio automotriz de vanguardia, dedicado a ofrecer soluciones integrales para el cuidado y la reparación de tu vehículo. Nos enorgullece contar con un equipo de técnicos altamente capacitados y una infraestructura equipada con las **últimas tecnologías para reparación de golpes y pintura**, garantizando resultados impecables y la restauración de tu automóvil a su estado original.</p>
+
+            <h3>Tecnología de Punta en Reparación de Golpes y Pintura:</h3>
+            <ul>
+                <li><strong>Sistemas de Medición 3D Computerizados:</strong> Utilizamos equipos avanzados para medir con precisión milimétrica la estructura de tu vehículo después de un golpe. Esto nos permite identificar y corregir deformaciones invisibles a simple vista, asegurando que el chasis y la carrocería recuperen sus dimensiones de fábrica, lo que es crucial para la seguridad y el comportamiento dinámico del coche.</li>
+                <li><strong>Bancos de Estiramiento por Doblado (Bench Racks):</strong> Contamos con bancos de estiramiento de última generación que permiten la reparación de daños estructurales complejos. Estos sistemas ejercen fuerzas controladas para devolver la forma original a las partes deformadas del chasis, minimizando la necesidad de reemplazo de piezas y manteniendo la integridad estructural del vehículo.</li>
+                <li><strong>Cabinas de Pintura Presurizadas y con Temperatura Controlada:</strong> Nuestras cabinas de pintura aseguran un ambiente libre de polvo y con control de temperatura y humedad. Esto es fundamental para una aplicación de pintura uniforme, sin imperfecciones y con un secado optimizado, logrando un acabado de fábrica que se integra perfectamente con el color original de tu auto.</li>
+                <li><strong>Pinturas al Agua de Bajo VOC:</strong> Comprometidos con el medio ambiente y la salud de nuestros trabajadores, empleamos pinturas de última generación a base de agua (low VOC - compuestos orgánicos volátiles), que ofrecen una excelente cobertura, durabilidad y un brillo excepcional, al mismo tiempo que reducen el impacto ambiental.</li>
+                <li><strong>Sistemas de Colorimetría Computarizados:</strong> Para garantizar una coincidencia de color perfecta, utilizamos espectrofotómetros y software de colorimetría avanzado. Estos sistemas analizan el color exacto de tu vehículo y formulan la pintura con la máxima precisión, evitando diferencias de tonalidad entre las partes reparadas y las originales.</li>
+                <li><strong>Lámparas de Curado IR (Infrarrojos) y UV (Ultravioleta):</strong> Para acelerar los tiempos de secado y curado de las masillas y pinturas, utilizamos lámparas de infrarrojos y ultravioleta. Estas tecnologías permiten un secado rápido y profundo de las capas, mejorando la resistencia y durabilidad del acabado final, lo que se traduce en menores tiempos de espera para nuestros clientes.</li>
+            </ul>
+            <p>En AutoStar, cada reparación es un compromiso con la excelencia. Confía en nosotros para devolverle la vida a tu vehículo con la más alta calidad y tecnología disponible en el mercado.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AutoStar Repuestos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
